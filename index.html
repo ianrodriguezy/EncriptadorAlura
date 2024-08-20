@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryptext</title>
+    <link rel="stylesheet" href="css/style-main.css" />
+    <link rel="stylesheet" href="css/text-animation.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="nav-logo light-color">EncrypText</h1>
+
+      </nav>
+    </header>
+    <main>
+      <section class="container form-section">
+        <div class="title">
+          <h1>Encriptador</h1>
+          <h3>Codifica y decodifica tus propios mensajes</h3>
+        </div>
+        <div class="encrypt-form">
+          <p>
+            Escribe en la caja de abajo el mensaje a codificar o decodificar, luego pulsa el
+            boton según corresponda y obten el resultado
+          </p>
+          <label for="msgtocrypt">Deja el mensaje:</label>
+          <textarea
+            name="msgtocrypt"
+            id="msgtocrypt"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui..."
+            class="st-input"
+          ></textarea>
+
+          <div class="form-action">
+            <button type="button" class="btn" id="encrypt-btn">Encriptar</button>
+
+            <button type="button" class="btn" id="decrypt-btn">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+      <section class="container msg-section">
+        <div id="welcome-msg">
+          <img src="img/espia.png" alt="Hombre con apariencia de espía" />
+          <h1>No hay mensajes para mostrar</h1>
+        </div>
+        <div id="encrypted-msg" class="scrollbar"></div>
+      </section>
+      <div id="alert"></div>
+    </main>
+    <footer>
+      <img src="img/head-alura.png" alt="Logo de Alura Latam" />
+      <p>Ian Rodriguez</p>
+
+      <div class="social-media">
+        <img src="img/icons/github_icon.svg" alt="Logo de github" />
+        <img
+          src="img/icons/linkedin_icon.svg"
+          alt="Logo de la red social LinkedIn"
+        />
+      </div>
+    </footer>
+
+    <script src="js/encrypt.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>
